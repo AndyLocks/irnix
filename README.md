@@ -1,6 +1,7 @@
 [![release](https://img.shields.io/badge/v0.0.1-a6e3a1?style=for-the-badge&labelColor=1e1e2e&logoColor=a6e3a1&label=release)](https://github.com/AndyLocks/irnix/releases/tag/irnix-v0.0.1)
-[![en_docs](https://img.shields.io/badge/EN_Documentation-a6e3a1?style=for-the-badge&labelColor=1e1e2e&logoColor=cdd6f4&logo=mdbook)](https://andylocks.github.io/irnix-docs/en/book/index.html)
-[![ru_docs](https://img.shields.io/badge/RU_Documentation-a6e3a1?style=for-the-badge&labelColor=1e1e2e&logoColor=cdd6f4&logo=mdbook)](https://andylocks.github.io/irnix-docs/ru/book/index.html)
+
+[![en_docs](https://img.shields.io/badge/EN_Documentation-89b4fa?style=for-the-badge&labelColor=1e1e2e&logoColor=cdd6f4&logo=mdbook)](https://andylocks.github.io/irnix-docs/en/book/index.html)
+[![ru_docs](https://img.shields.io/badge/RU_Documentation-89b4fa?style=for-the-badge&labelColor=1e1e2e&logoColor=cdd6f4&logo=mdbook)](https://andylocks.github.io/irnix-docs/ru/book/index.html)
 
 **[More detailed documentation](https://andylocks.github.io/irnix-docs/en/book/index.html)** is also available, which is also [available in Russian language](https://andylocks.github.io/irnix-docs/ru/book/index.html).
 
