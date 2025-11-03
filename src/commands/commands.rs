@@ -1,5 +1,6 @@
 use std::path::PathBuf;
 use clap::Subcommand;
+use clap_complete::Shell;
 
 #[derive(Subcommand)]
 pub enum Commands {
@@ -17,5 +18,10 @@ pub enum Commands {
 
         #[arg(short, long, help = "Directory path")]
         namespace: Option<PathBuf>,
-    }
+    },
+    #[command(about = "Generate auto completion", help_expected = true)]
+    Completions {
+        #[arg(help = "Your shell name (zsh, bash, fish, elvish, powershell)")]
+        shell: Shell,
+    },
 }

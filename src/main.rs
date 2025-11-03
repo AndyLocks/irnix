@@ -1,10 +1,11 @@
-use std::io::stdin;
-use std::process::exit;
-use clap::Parser;
 use crate::commands::commands::Commands;
 use crate::config::unwrap_namespace;
 use crate::handlers::{Handle, MainHandler};
 use crate::method::Method;
+use clap::Parser;
+use std::io::stdin;
+use std::process::exit;
+use clap::CommandFactory;
 
 mod commands;
 mod config;
@@ -27,24 +28,26 @@ pub struct Cli {
 
 fn main() {
     match Cli::parse().command {
-        Commands::Execute {args, method, namespace} => {
-            let method = Method::new(
-                method,
-                args,
-                stdin(),
-                unwrap_namespace(namespace)
-            );
+        Commands::Execute {
+            args,
+            method,
+            namespace,
+        } => {
+            let method = Method::new(method, args, stdin(), unwrap_namespace(namespace));
 
             match method {
                 Ok(mut method) => {
                     MainHandler::handle(&mut method);
                     method.execute();
-                },
+                }
                 Err(message) => {
                     eprintln!("{message}");
                     exit(1);
                 }
             }
+        }
+        Commands::Completions { shell } => {
+            clap_complete::generate(shell, &mut Cli::command(), "irnix", &mut std::io::stdout())
         }
     }
 }

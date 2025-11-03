@@ -1,5 +1,5 @@
 use crate::contract_tokens::ContractTokens;
-use logos::{Logos, Source};
+use logos::Logos;
 use std::collections::HashSet;
 use std::process::exit;
 use std::str::FromStr;
