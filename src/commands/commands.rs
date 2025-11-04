@@ -24,4 +24,9 @@ pub enum Commands {
         #[arg(help = "Your shell name (zsh, bash, fish, elvish, powershell)")]
         shell: Shell,
     },
+    #[command(about = "Outputs all available methods", help_expected = true)]
+    Methods{
+        #[arg(short, long, help = "Directory path")]
+        namespace: Option<PathBuf>,
+    },
 }

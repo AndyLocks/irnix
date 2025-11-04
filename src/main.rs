@@ -2,10 +2,10 @@ use crate::commands::commands::Commands;
 use crate::config::unwrap_namespace;
 use crate::handlers::{Handle, MainHandler};
 use crate::method::Method;
+use clap::CommandFactory;
 use clap::Parser;
 use std::io::stdin;
 use std::process::exit;
-use clap::CommandFactory;
 
 mod commands;
 mod config;
@@ -49,5 +49,6 @@ fn main() {
         Commands::Completions { shell } => {
             clap_complete::generate(shell, &mut Cli::command(), "irnix", &mut std::io::stdout())
         }
+        Commands::Methods { namespace } => commands::methods::execute(unwrap_namespace(namespace)),
     }
 }
