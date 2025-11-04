@@ -1,4 +1,4 @@
-[![release](https://img.shields.io/badge/v0.0.3-a6e3a1?style=for-the-badge&labelColor=1e1e2e&logoColor=a6e3a1&label=release)](https://github.com/AndyLocks/irnix/releases/tag/irnix-v0.0.3)
+[![release](https://img.shields.io/badge/v0.0.4-a6e3a1?style=for-the-badge&labelColor=1e1e2e&logoColor=a6e3a1&label=release)](https://github.com/AndyLocks/irnix/releases/tag/irnix-v0.0.4)
 [![aur](https://img.shields.io/badge/AUR-89b4fa?style=for-the-badge&labelColor=1e1e2e&logo=archlinux&logoColor=cdd6f4)](https://aur.archlinux.org/packages/irnix)
 
 [![en_docs](https://img.shields.io/badge/EN_Documentation-fab387?style=for-the-badge&labelColor=1e1e2e&logoColor=cdd6f4&logo=mdbook)](https://andylocks.github.io/irnix-docs/en/book/index.html)
