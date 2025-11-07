@@ -48,3 +48,9 @@ Output:
 ```
 Hello World!
 ```
+
+---
+
+<p align="center">
+	<a href="https://github.com/AndyLocks/irnix?tab=GPL-3.0-1-ov-file#readme"><img src="https://img.shields.io/badge/GPL-cba6f7?style=for-the-badge&label=license&labelColor=1e1e2e"></a>
+</p>
