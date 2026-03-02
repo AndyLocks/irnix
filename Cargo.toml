@@ -1,7 +1,9 @@
 [package]
 name = "irnix"
-version = "0.0.4"
+version = "0.0.5"
 edition = "2024"
+description = "A system for organizing objects, which turns the file system into objects with methods and contracts."
+license = "GPL-3-or-later"
 
 [dependencies]
 atty = "0.2.14"

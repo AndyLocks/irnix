@@ -16,9 +16,10 @@ mod method;
 
 #[derive(Parser)]
 #[command(
-    name = "string-pool",
+    name = "irnix",
     version,
-    about = "String Pool",
+    about,
+    after_help = "Copyright (C) 2026  Illia <jandylokc@gmail.com>\nLicense GPL-3.0-or-later",
     arg_required_else_help = false
 )]
 pub struct Cli {

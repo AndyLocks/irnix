@@ -15,7 +15,7 @@ pub struct Contract {
 }
 
 impl Contract {
-    #[warn(dead_code)]
+    #[allow(dead_code)]
     pub fn new(
         stdin: impl Into<Stdin>,
         args: Vec<Arg>,
